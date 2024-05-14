@@ -1,0 +1,166 @@
+body {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('img/planet.jpg');
+    background-size: cover;
+    background-color: rgb(27, 25, 25);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 250px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    margin-top: 30px!important;
+    margin-bottom: 10px!important;
+    border: 1px solid #ffffff!important;
+    border-radius: 8px!important;
+    overflow: hidden!important;
+    background-color: #333333!important;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.2s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 50px;
+    height: 48px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.card-text {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.form-label {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px; 
+}
+
+.form-select, .input-group {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-left: -20px;
+    pointer-events: none;
+}
+
+.btn-primary {
+    background-color: #ff0000b7 !important;
+    border-color: #ffffffda !important;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #ff0000 !important;
+    transform: scale(1.05);
+}
+
+.more-info {
+    display: none;
+}
+
+.more-info.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 150px;
+    }
+    
+    .card-title {
+        font-size: 30px;
+    }
+    
+    .card-text {
+        font-size: 20px;
+    }
+    
+    .card img {
+        height: 150px;
+    }
+}
